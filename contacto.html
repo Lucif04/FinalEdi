@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.cdnfonts.com/css/open-sans" rel="stylesheet">
+    <title>Contacto</title>
+</head>
+<body>
+    <div class="contenedor">
+        <header>
+            <div class="logo">
+               <a href="index.html"> <img class="logo1" src="img/logo.png" alt=""> </a>
+                <h2 class="logo-title">Rivadavia</h2>
+            </div>
+            <input type="checkbox" id="check">
+            <label for="check" class="mostrar-menu">
+                &#8801
+            </label>
+            <nav class="menu"> 
+                <a href="index.html">Inicio</a>
+                <a href="deportes.html">Deportes</a>
+                <a href="contacto.html">Contacto</a>
+                <a href="sobrenosotros.html">Sobre Nosotros</a>
+                <label for="check" class="esconder-menu">
+                    &#215
+                </label>  
+            </nav>  
+        </header>
+    </div> 
+
+    <!-- formulario de contacto -->
+
+    <form action="msjenviado.html">
+        <div class="formulario">
+            <div class="fila">
+                <input type="text" name="nombre" placeholder="Nombre" required>
+                <input type="text" name="apellido" placeholder="Apellido" required>
+                <input type="number" name="edad" placeholder="Edad" required>
+            </div>
+            <div class="fila">
+                <input type="number" name="telefono" placeholder="Telefono" required>
+                <input type="email" name="email" required>
+                <select style="height: 30px;" name="consulta" id="consulta" required>
+                    <option> Seleccionar tipo de consulta </option>
+                    <option value="socio">Socio / Hacerme Socio </option>
+                    <option value="deporte">Deporte</option>
+                    <option value="donaciones">Donaciones</option>
+                    <option value="pileta">Pileta/Colonia</option>
+                </select>        
+            </div>
+            <div class="fila">
+                <textarea type="text" name="consulta" placeholder="Escriba aqui su duda o consulta para que un operador se ponga en contacto con ustes, muchas gracias." required></textarea>
+            </div>
+            <input class="boton" type="submit" value="Enviar" id="boton">
+            
+        </div>
+    </form>
+
+    <footer>
+        <div class="logo-lb">
+            <img src="iconos/logo-lb.png" alt="">
+            <h4>copyright</h4>
+        </div>
+        <div class="redes">
+            <a target="_blank" href="https://api.whatsapp.com/send?phone=5492364652498"><img src="iconos/whatsapp.png" alt=""></a>
+            <a target="_blank" href="https://www.instagram.com/rivadaviadejuninoficial/"><img src="iconos/instagram.png" alt=""></a>
+            <a  target="_blank" href="https://www.facebook.com/ClubRivadavia.Oficial"><img src="iconos/facebook.png" alt=""></a>
+        </div>
+    </footer>
+
+</body>
+</html>
